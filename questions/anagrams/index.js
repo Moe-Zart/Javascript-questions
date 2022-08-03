@@ -11,7 +11,7 @@
 
 
  const anagrams = (strA, strB) => {
-    const anagramA = strA.toLowerCase().replaceAll(" ","").split('').sort().join()
+    const anagramA = strA.toLowerCase().replaceAll(" ","").split('').sort().join() //lower case, remove space, turn into array, sort in alphabetical order, turn into string
     const anagramB = strB.toLowerCase().replaceAll(" ","").split('').sort().join()
     return anagramA === anagramB
 }
