@@ -10,7 +10,11 @@
  */
 
 const palindrome = (str) => {
-  
+  let strReverse = str.split('').reverse().join('')
+  if(str == strReverse){
+    return true
+  }
+  return false
 };
 
 module.exports = palindrome;
