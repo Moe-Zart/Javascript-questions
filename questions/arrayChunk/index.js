@@ -8,7 +8,15 @@
  */
 
 const arrayChunk = (array, size) => {
-  
+  const chunkedArray = []
+
+  for(let i=0; i<array.length;i++){
+    if(i % size !== 0){
+        continue
+    }
+    chunkedArray.push(array.slice(i, i + size))
+  }
+  return chunkedArray
 };
 
 module.exports = arrayChunk;
