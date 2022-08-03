@@ -8,7 +8,12 @@
  */
 
 const capitalize = (str) => {
-  
+    const result = []
+  const strArr = str.split(' ')
+  for(let i of strArr){
+    result.push(i[0].toUpperCase() + i.slice(1)) //0 index becomes uppercase, and you are slicing the capitalised letter out
+  }
+  return result.join(' ')
 };
 
 module.exports = capitalize;
