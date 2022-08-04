@@ -13,12 +13,25 @@
  * steps(4)
  *  '#   '
  *  '##  '
- *  '### '
+ *  '### '  
  *  '####'
  */
-
+//if column = row, add # for every value before it
 const steps = (n) => {
+for(let row=0;row<n;row++){ //looping over every row (set to n)
+    let stepStr = ''//initialise empty string
+for(let column=0; column<n;column++){ //looping over every column (set to n)
+    if(column<=row){
+        stepStr += '#'
+    }
+    else{
+        stepStr+= ' '
+    }
 
+}
+console.log(stepStr)
+
+}
 };
 
 module.exports = steps;
